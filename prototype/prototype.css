@@ -1,0 +1,230 @@
+/* prototype.css */
+
+body {
+    font-family: Montserrat, Futura, Trebuchet MS, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #6FCEEE;
+	/*---------------*/
+	font-size: 20px;
+	Line-height: 150%;
+	font-weight: 300;
+}
+
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+    background: #fff;
+    padding: 1.25rem;
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.site-logo-image {
+    height: 125px;
+}
+
+.site-nav a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.site-nav a:hover {
+    color: #007bff;
+}
+
+.main {
+    padding: 20px 0;
+}
+
+.lead, .showcase, .about-section {
+    margin-bottom: 20px;
+}
+
+.center-text {
+	text-align: center;
+}
+
+.lead h1.primary-statement, .showcase h2, .about-section h1 {
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.secondary-statement, article p, .about-section p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.showcase-container {
+    display: flex;
+	flex-wrap: wrap;
+    justify-content: space-between;
+	gap: 20px;
+}
+
+.showcase-item {
+    flex: 1 1 700px;
+	max-width: 100%
+}
+
+.showcase-item img {
+    width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.showcase-item a {
+	text-decoration: none;
+}
+
+.home-item {
+	flex: 1 1 600px;
+	max-width: 50%;
+}
+
+article h2 {
+    color: #007bff;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.journey-div {
+    font-size: 100px;
+    margin-left: 140px;
+    margin-top: 100px;
+	font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, sans-serif;
+}
+
+.journey-link {
+	text-decoration: none;
+	color: black;
+}
+
+/* ------------------------- */
+html {
+	font-size: 16px;
+}
+
+.bottom-text {
+	height: 30px;
+}
+
+/* ------------------------- */
+.tips-section {
+    margin-bottom: 20px;
+}
+
+.tips-list {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.tips-list li {
+    margin-bottom: 10px;
+}
+/* ----------------------- */
+.profile-container {
+    margin-top: 20px;
+}
+
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.bio, .photo {
+    flex: 1;
+    padding: 10px;
+}
+
+.photo img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.bio {
+    color: #555;
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 16px;
+}
+/* -------------------- */
+.content-grid {
+    display: grid;
+    grid-template-columns: 75% 25%; 
+    gap: 20px; 
+}
+
+.main-reviews {
+    padding: 20px; 
+}
+
+.micro-reviews {
+    padding: 20px; 
+    background-color: #f9f9f9; 
+}
+
+.micro-reviews a {
+	text-decoration: none;
+}
+/* -------------------- */
+.showcase-text {
+	text-align: left;
+}
+.center-text {
+	text-align: center;
+}
+.secondary-blue {
+	color: #007bff;
+}
+
+.review-item {
+	flex: 1 1 600px;
+	max-width: 70%;
+}
+.img-left {
+  float: left;
+  margin-right: 20px;
+}
+.interview-pic {
+	flex: 1 1 600px;
+	max-width: 20%;
+}
+
+.review-item.img-left {
+    max-width: 600px; /* Maximum width */
+    height: auto;     /* Height adjusts automatically */
+}
+.interview-pic.img-left {
+    max-width: 300px; /* Maximum width */
+    height: auto;     /* Height adjusts automatically to maintain aspect ratio */
+}

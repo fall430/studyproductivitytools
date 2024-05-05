@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 194.53 177.04">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #000;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke: #000;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-5 {
+        fill: #feecba;
+        stroke-width: 0px;
+      }
+
+      .cls-3 {
+        fill: #f2f2f2;
+      }
+
+      .cls-4 {
+        fill: #ff1d25;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1-2" data-name="Layer 1">
+    <g>
+      <rect class="cls-2" x="28.93" y="7.31" width="165.1" height="150.49" rx="12" ry="12"/>
+      <rect class="cls-5" x="114.11" y="58.93" width="31.52" height="29.29" rx="10.35" ry="10.35"/>
+      <rect class="cls-5" x="114.11" y="89.86" width="31.52" height="29.29" rx="10.35" ry="10.35"/>
+      <rect class="cls-5" x="150.57" y="58.93" width="31.52" height="29.29" rx="10.35" ry="10.35"/>
+      <rect class="cls-5" x="77.44" y="90.41" width="31.52" height="29.29" rx="10.35" ry="10.35"/>
+      <rect class="cls-5" x="77.44" y="58.93" width="31.52" height="29.29" rx="10.35" ry="10.35"/>
+      <rect class="cls-5" x="150.57" y="90.41" width="31.52" height="29.29" rx="10.35" ry="10.35"/>
+      <rect class="cls-5" x="78.05" y="121.9" width="31.52" height="29.29" rx="10.35" ry="10.35"/>
+      <rect class="cls-5" x="114.11" y="121.9" width="31.52" height="29.29" rx="10.35" ry="10.35"/>
+      <rect class="cls-5" x="41.51" y="58.93" width="31.52" height="29.29" rx="10.35" ry="10.35"/>
+      <rect class="cls-5" x="41.51" y="90.41" width="31.52" height="29.29" rx="10.35" ry="10.35"/>
+      <polygon class="cls-4" points="28.93 36.64 194.03 36.64 194.03 17.34 193.88 15.62 192.51 12.05 189.8 9.17 187.09 7.8 185.52 7.31 180.58 7.31 38.96 7.31 36.56 7.6 34.43 8.4 33.33 9.05 31.43 10.74 30.05 12.76 29.08 15.62 29.01 18.81 28.93 36.64"/>
+      <rect class="cls-3" x="54.64" y=".5" width="9.39" height="30.25" rx="3.32" ry="3.32"/>
+      <rect class="cls-3" x="89.11" y=".5" width="9.39" height="30.25" rx="3.32" ry="3.32"/>
+      <rect class="cls-3" x="123.82" y=".5" width="9.39" height="30.25" rx="3.32" ry="3.32"/>
+      <rect class="cls-3" x="157.73" y=".5" width="9.39" height="30.25" rx="3.32" ry="3.32"/>
+      <g>
+        <circle class="cls-1" cx="27.82" cy="149.22" r="27.32"/>
+        <circle class="cls-3" cx="27.92" cy="149.25" r="23"/>
+        <polygon class="cls-1" points="27.82 133.51 26.72 133.78 25.98 134.57 25.61 136.43 25.61 150.67 39.22 164.01 40.28 164.01 41.18 163.35 41.76 162.37 41.76 160.94 41.34 160.41 31.54 150.78 29.85 148.39 29.9 136.53 29.64 135.1 29.32 134.52 28.63 133.88 27.82 133.51"/>
+      </g>
+    </g>
+  </g>
+</svg>

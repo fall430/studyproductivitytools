@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Streamlined Study Hacks - Home</title>
+    <link rel="stylesheet" href="prototype.css" type="text/css">
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="site-header">
+        <a class="site-logo" href="home.html">
+          <img class="site-logo-image" src="images/shortenedlogo1.svg" alt="Streamlined Study Hacks logo">
+        </a>
+        <nav class="site-nav">
+		   	<a href="home.html">Home</a>
+           	<a href="gallery.html">Gallery</a>
+           	<a href="reviews.html">Reviews</a>
+           	<a href="about.html">About</a>
+			<a href="interview.html">Interviews</a>
+			<a href="map.html">Map</a>
+			<a href="essay.html">Essay</a>
+			<a href="tips.html">Tips &amp; Tricks</a>
+        </nav>
+      </header>
+      <main>
+		  	<div class="worldmap">
+    			<img class="worldmap-item-vertical" id="worldmap-item-check" src="images/check.svg" alt="Correctness Checking" data-info="<a href='#section-check'>Correctness Checking</a> tools like Grammarly and Turnitin.">
+    			<img class="worldmap-item-vertical" id="worldmap-item-notes" src="images/notes.svg" alt="Note Taking" data-info="Efficient <a href='#section-notes'>note taking</a> with Evernote and Microsoft OneNote.">
+    			<img class="worldmap-item-horizontal" id="worldmap-item-online" src="images/online.svg" alt="Online Courses" data-info="Learn from <a href='#section-online'>online courses</a> with Coursera and Udemy.">
+    			<img class="worldmap-item-vertical" id="worldmap-item-calendar" src="images/calendar.svg" alt="Time Management" data-info="<a href='#section-calendar'>Manage your Time</a> with Trello and Google Calendar.">
+    			<img class="worldmap-item-vertical" id="worldmap-item-project" src="images/project.svg" alt="Project Management" data-info="<a href='#section-project'>Manage your projects</a> with Asana and Jira">
+    			<img class="worldmap-item-vertical" id="worldmap-item-ai" src="images/ai.svg" alt="Artificial Intelligence" data-info="Take advantage of <a href='#section-ai'>Artificial Intelligence</a> with ChatGPT and Gemini">
+    			<img class="worldmap-item-horizontal" id="worldmap-item-cards" src="images/cards.svg" alt="Memorization Tools" data-info="<a href='#section-cards'>Memorize important information</a> with the aide of Quizlet and EdApp">
+			</div>
+		  
+		  	<section id="section-check" class="map-section">
+				<h2>Correctness Checking</h2>
+				<p>Correctness Checking refers to tools and software designed to ensure accuracy in your work, whether you're writing an essay, coding, or handling data. Examples include <strong>Grammarly</strong>, for grammar and style suggestions, and <strong>Turnitin</strong>, used widely in academic settings to check for plagiarism.</p>
+			</section>
+			<section id="section-notes" class="map-section">
+				<h2>Note Taking</h2>
+				<p>Note Taking encompasses applications and services that facilitate efficient and organized note-taking. <strong>Evernote</strong> allows users to organize notes with multimedia support, while <strong>Microsoft OneNote</strong> offers a digital notebook experience across devices.</p>
+			</section>
+			<section id="section-online" class="map-section">
+				<h2>Online Courses</h2>
+				<p>Online Courses are digital platforms offering educational programs taught by industry experts. <strong>Coursera</strong> and <strong>Udemy</strong> provide a range of courses with flexible learning opportunities and certifications.</p>
+			</section>
+			<section id="section-calendar" class="map-section">
+				<h2>Time Management</h2>
+				<p>Time Management tools help organize and prioritize tasks, enhancing productivity. <strong>Trello</strong> uses boards and cards to manage projects, while <strong>Google Calendar</strong> assists in scheduling and organizing daily activities.</p>
+			</section>
+			<section id="section-project" class="map-section">
+				<h2>Project Management</h2>
+				<p>Project Management software helps teams plan, execute, and monitor projects effectively. <strong>Asana</strong> and <strong>Jira</strong> are popular tools for keeping projects on track and facilitating team collaboration.</p>
+			</section>
+			<section id="section-ai" class="map-section">
+				<h2>Artificial Intelligence</h2>
+				<p>Artificial Intelligence (AI) in productivity tools involves smart algorithms that automate tasks and enhance decision-making. Tools like <strong>Grammarly’s AI features</strong> adapt to your writing style, and <strong>Perplexity AI</strong> offers a smoother and enhanced research experience.</p>
+			</section>
+			<section id="section-cards" class="map-section">
+				<h2>Memorization Tools</h2>
+				<p>Memorization Tools use techniques like spaced repetition to enhance learning and retention. <strong>Anki</strong> and <strong>Quizlet</strong> are effective for using flashcards and interactive games to improve memory skills.</p>
+			</section>
+
+
+
+      </main>
+      <footer>
+        <!-- footer content -->
+		<p>&copy; 2024 by Scapedog Design. All rights reserved.</p> 
+
+      </footer>
+    </div>
+	
+	<div id="infoPopup" class="infoPopup">
+		<span class="close">&times;</span>
+		<p id="infoText"></p>
+	</div>
+
+	<script>
+	document.addEventListener("DOMContentLoaded", function() {
+		var imgs = document.querySelectorAll('.worldmap img');
+		var popup = document.getElementById("infoPopup");
+		var infoText = document.getElementById("infoText");
+		var closeBtn = document.getElementsByClassName("close")[0];
+
+		imgs.forEach(img => {
+			img.addEventListener('click', function(e) {
+				e.stopPropagation();
+				infoText.innerHTML = img.getAttribute('data-info');
+				popup.style.display = "block";
+				popup.style.left = (e.pageX + 15) + 'px';
+				popup.style.top = (e.pageY - 30) + 'px';
+			});
+		});
+
+
+		closeBtn.onclick = function() {
+			popup.style.display = "none";
+		};
+
+		document.addEventListener('click', function(event) {
+			if (!popup.contains(event.target) && event.target !== popup && popup.style.display === "block") {
+				popup.style.display = "none";
+			}
+		});
+	});
+	</script>
+  </body>
+</html>
