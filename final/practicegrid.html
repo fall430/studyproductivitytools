@@ -1,0 +1,111 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Learning Platforms</title>
+
+<style>
+    body {
+        margin: 0;
+        background: #f0f0f0;
+        font-family: Arial, sans-serif; 
+        font-size: 16px;
+    }
+	
+	h1 {
+        text-align: center;
+        color: #333;
+        margin-bottom: 16px;        
+    }
+
+    .wrapper {
+        background: #fff;
+        width: 100%; /* Make the wrapper full width */
+        max-width: 1200px; /* Optional: Set a max-width for large screens */
+        margin: 20px auto;
+        padding: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(12, 1fr); /* Create a 12-column grid */
+        grid-auto-rows: minmax(100px, auto); /* Minimum height for rows */
+    }
+
+    .site-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .site-logo img {
+        width: 100%;
+        height: auto;
+    }
+
+    .site-description {
+        color: #555;
+    }
+
+    /* Modular layout */
+    .edx {
+        grid-column: span 6; /* Take up half the container */
+        grid-row: span 2; /* Double height */
+    }
+
+    .udemy {
+        grid-column: span 4; /* Take up one-third of the container */
+        grid-row: span 1;
+    }
+
+    .skillshare {
+        grid-column: span 2; /* Take up one-sixth of the container, making it narrower */
+        grid-row: span 3; /* Triple height */
+    }
+	
+	.coursera {
+    	grid-column: span 3; 
+    	grid-row: span 2;
+	}
+
+	.evernote {
+    	grid-column: span 4;
+    	grid-row: span 1;
+	}
+</style>    
+
+</head>
+
+<body>
+
+<h1>Learn Stuff Online</h1>
+<div class="wrapper">
+    
+	<div class="site-info edx">
+        <img class="site-logo" src="images/edx.jpg" alt="edX">
+        <p class="site-description">edX has tons of courses from big universities. You can learn almost anything.</p>
+    </div>
+    
+    <div class="site-info udemy">
+        <img class="site-logo" src="images/udemy.jpg" alt="Udemy">
+        <p class="site-description">Udemy lets you learn new skills at your own speed. They have everything from coding to cooking.</p>
+    </div>
+    
+    <div class="site-info skillshare">
+        <img class="site-logo" src="images/skillshare.jpg" alt="SkillShare">
+        <p class="site-description">SkillShare is for creative skills like drawing, photography, and more. It’s fun and easy to follow along.</p>
+    </div>
+	
+	<div class="site-info coursera">
+		<img class="site-logo" src="images/coursera.jpg" alt="Coursera">
+		<p class="site-description">Coursera partners with universities and organizations to offer courses on a variety of topics.</p>
+	</div>
+
+	<div class="site-info evernote">
+		<img class="site-logo" src="images/evernote.jpg" alt="Evernote">
+		<p class="site-description">Evernote helps you capture and prioritize ideas, projects, and to-do lists, so nothing falls through the cracks.</p>
+	</div>
+    
+</div> 
+
+</body>
+</html>
